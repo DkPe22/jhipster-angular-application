@@ -56,6 +56,35 @@ module.exports = (options) => ({
             },
             // Ignore warnings about System.import in Angular
             { test: /[\/\\]@angular[\/\\].+\.js$/, parser: { system: true } },
+            {
+                test: /manifest.webapp$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'manifest.webapp'
+                }
+            },
+            {
+                test: /\.js/,
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    "presets": [
+                      [
+                        "@babel/preset-env",
+                        {
+                          "targets": {
+                            "firefox": "60",
+                            "ie": "11"
+                          },
+                          "useBuiltIns": "entry",
+                          "corejs": 3
+                        }
+                      ]
+                    ]
+                  }
+                },
+                exclude: /@babel(?:\/|\\{1,2})runtime|core-js/,
+              },
         ]
     },
     plugins: [
