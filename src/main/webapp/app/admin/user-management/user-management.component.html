@@ -38,7 +38,8 @@
                         <button class="btn btn-success btn-sm" (click)="setActive(user, false)" *ngIf="user.activated"
                                 [disabled]="!currentAccount || currentAccount.login === user.login" jhiTranslate="userManagement.activated">Activated</button>
                     </td>
-                    <td>{{ user.langKey }}</td>
+                    <td><span class="flag-icon flag-icon-{{ user.langKey === 'en' ? 'gb' : user.langKey}}"></span>
+                    </td>
                     <td>
                         <div *ngFor="let authority of user.authorities">
                             <span class="badge badge-info">{{ authority }}</span>
