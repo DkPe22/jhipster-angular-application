@@ -3,7 +3,7 @@ USER root
 ADD . /code/
 RUN rm -Rf /code/target /code/build /code/node_modules && \
     cd /code/ && \
-    ./gradlew -Pprod bootWar -x test && \
+    ./gradlew -Pprod bootJar -x test && \
     mv /code/build/libs/*.war /app.war
 
 FROM openjdk:8-jre-alpine
