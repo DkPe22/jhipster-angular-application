@@ -2,7 +2,7 @@
   "generator-jhipster": {
     "applicationType": "monolith",
     "gitCompany": "",
-    "baseName": "jhipsterAngularApplication",
+    "baseName": "PMPSApplication",
     "packageName": "com.petercompany.peterapp",
     "packageFolder": "com/petercompany/peterapp",
     "serverPort": 8083,

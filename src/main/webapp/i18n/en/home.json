@@ -1,14 +1,15 @@
 {
   "home": {
-    "title": "Welcome, Java Hipster!",
+    "title": "Welcome, PMPS Application!",
     "subtitle": "This is your homepage",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     },
     "question": "If you have any question on JHipster:",
     "link": {
-      "homepage": "JHipster homepage",
-      "stackoverflow": "JHipster on Stack Overflow",
+      "homepage": "#somosHiberus",
+      "mail": "Hiberus mail",
+      "redmine": "Hiberus Redmine",
       "bugtracker": "JHipster bug tracker",
       "chat": "JHipster public chat room",
       "follow": "follow @jhipster on Twitter"
